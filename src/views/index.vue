@@ -67,7 +67,11 @@ export default {
   color: rgba(69, 90, 100, 0.6);
   font-size: 14px;
 }
-
+.sun-demo-home-nav-title {
+  margin: 24px 0 8px 16px;
+  color: rgba(69, 90, 100, 0.6);
+  font-size: 14px;
+}
 .sun-demo-home-nav-block {
   position: relative;
   display: flex;
