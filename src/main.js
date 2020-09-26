@@ -5,6 +5,8 @@ import router from './router'
 import Sun from 'vue-sun-ui'
 // 引入sun-ui样式文件
 import 'vue-sun-ui/dist/vue-sun-ui.css'
+// 引入基础样式
+import './assets/css/base.css'
 Vue.config.productionTip = false
 Vue.use(Sun)
 new Vue({

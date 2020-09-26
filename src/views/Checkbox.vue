@@ -1,12 +1,10 @@
 <template>
-  <div class="app">
-    <router-view />
-  </div>
+  <div class="sun-demo-checkbox"></div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style>
+<style lang="less">
 </style>
