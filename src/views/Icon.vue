@@ -50,7 +50,7 @@
 
         <!-- 图标大小 -->
         <div class="sun-demo-block">
-          <h2 class="sun-demo-nav-title">图标颜色</h2>
+          <h2 class="sun-demo-nav-title">图标大小</h2>
           <!-- <code>Icon</code>的<code>size</code>属性用来设置图标的尺寸大小，默认单位为px -->
           <div class="sun-demo-nav-row">
             <sun-icon name="message-o" size="40" />
