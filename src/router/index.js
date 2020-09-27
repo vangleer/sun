@@ -7,8 +7,7 @@ const routes = [{
     path: '/',
     name: 'Index',
     component: Index
-  },
-  {
+  }, {
     path: '/button',
     name: 'Button',
     component: () => import('../views/Button.vue')
