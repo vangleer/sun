@@ -17,8 +17,9 @@
       <h2 class="sun-demo-nav-title">自定义图标</h2>
       <div class="sun-demo-nav-row">
         <sun-cell title="自定义图标" is-link bg-cffect @click="$toast({message:'自定义图标',icon:'like-o'})" />
-        <sun-cell title="自定义图片" is-link bg-cffect @click="$toast.loading('加载中...')" />
-        <sun-cell title="自定义加载图标" is-link bg-cffect @click="$toast.success('成功提示')" />
+        <sun-cell title="自定义图片" is-link bg-cffect
+          @click="$toast.loading({message:'自定义图片',icon:'https://img.yzcdn.cn/vant/logo.png'})" />
+        <sun-cell title="自定义加载图标" is-link bg-cffect @click="$toast.loading({message:'加载中...',icon:'loading2'})" />
       </div>
     </div>
 
