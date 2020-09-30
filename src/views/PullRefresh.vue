@@ -8,7 +8,7 @@
     </sun-tabs>
 
     <div class="content" v-if="currentIndex===0">
-      <sun-pull-refresh v-model="isLoading" @refresh="handleRefresh">
+      <sun-pull-refresh v-model="isLoading" @refresh="handleRefresh1">
         <p class="refresh-time">刷新次数{{count}}</p>
       </sun-pull-refresh>
     </div>
@@ -45,7 +45,10 @@
     },
     methods: {
       handleRefresh() {
-        console.log('刷新完啦。。。')
+        this.count++
+      },
+      handleRefresh1() {
+        this.$toast('刷新完啦...')
         this.count++
       },
 
