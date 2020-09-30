@@ -29,20 +29,20 @@
     <!-- 禁用输入框 -->
     <div class="sun-demo-block">
       <sun-cell title="禁用输入框">
-        <sun-stepper v-model="value" disable-input />
+        <sun-stepper v-model="value5" disable-input />
       </sun-cell>
     </div>
 
     <!-- 自定义大小 -->
     <div class="sun-demo-block">
       <sun-cell title="自定义大小">
-        <sun-stepper v-model="value" input-width="40px" button-size="32px" />
+        <sun-stepper v-model="value6" input-width="40px" button-size="32px" />
       </sun-cell>
     </div>
     <!-- 圆角风格 -->
     <div class="sun-demo-block">
       <sun-cell title="圆角风格">
-        <sun-stepper v-model="value" theme="round" button-size="22" disable-input />
+        <sun-stepper v-model="value7" theme="round" button-size="22" disable-input />
       </sun-cell>
     </div>
   </div>
@@ -55,9 +55,10 @@
         value: 4,
         value2: 2,
         value3: 6,
-        value4: 4,
-        value5: 4,
-        value6: 4,
+        value4: 3,
+        value5: 3,
+        value6: 2,
+        value7: 6,
       }
     }
   }
