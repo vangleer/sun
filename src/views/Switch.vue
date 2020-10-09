@@ -9,25 +9,25 @@
     <!-- 禁用状态 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">禁用状态</h2>
-      <sun-switch v-model="checked" disabled />
+      <sun-switch v-model="checked2" disabled />
     </div>
 
     <!-- 加载状态 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">加载状态</h2>
-      <sun-switch v-model="checked" loading />
+      <sun-switch v-model="checked3" loading />
     </div>
 
 
     <!-- 自定义大小 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">自定义大小</h2>
-      <sun-switch v-model="checked" size="24px" />
+      <sun-switch v-model="checked4" size="24px" />
     </div>
     <!-- 自定义颜色 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">自定义颜色</h2>
-      <sun-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
+      <sun-switch v-model="checked5" active-color="#07c160" inactive-color="#ee0a24" />
     </div>
   </div>
 </template>
@@ -36,7 +36,11 @@
   export default {
     data() {
       return {
-        checked: false
+        checked: false,
+        checked2: false,
+        checked3: false,
+        checked4: false,
+        checked5: false,
       }
     }
   }

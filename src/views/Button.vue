@@ -60,12 +60,12 @@
 
       <!-- 按钮边框效果 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">按钮边框效果</h2>
+        <h2 class="sun-demo-nav-title">按钮边框阴影效果</h2>
         <div class="sun-demo-nav-row">
           <sun-button type="primary"
-                      :isExtra="false">关闭效果</sun-button>
+                      isExtra>开起点击边框阴影</sun-button>
           <sun-button type="info"
-                      effectWidth="10px">调整效果大小</sun-button>
+                      effectWidth="10px" isExtra>调整效果大小</sun-button>
         </div>
       </div>
 
