@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-nav-bar">
-    <sun-nav-bar title="NavBar" left-arrow />
+    <sun-nav-bar title="NavBar" left-arrow @left-click="$router.back()" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">基础用法</h2>
@@ -44,7 +44,7 @@
 
 <style lang="less">
   .sun-demo-nav-bar {
-    padding-top: 49px;
+    margin-top: 49px;
     width: 100vw;
     height: 100vh;
     background-color: #f8f8f8;
