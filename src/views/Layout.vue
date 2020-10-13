@@ -143,5 +143,6 @@
     .sun-row>.sun-col:nth-child(2n) {
       opacity: 0.6;
     }
+   
   }
 </style>
