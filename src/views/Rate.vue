@@ -67,14 +67,8 @@
 
 <style lang="less">
   .sun-demo-rate {
-    margin-top: 49px;
     min-height: 96vh;
-
-    .sun-demo-nav-title {
-      padding: 16px 3px;
-      margin: 0;
-    }
-
+    background-color: #fff;
     .sun-demo-block {
       padding: 0 16px;
       margin-bottom: 10px;

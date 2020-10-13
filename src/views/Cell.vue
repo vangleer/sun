@@ -58,13 +58,14 @@ export default {}
 
 <style lang="less" scoped>
 .sun-demo-cell {
-  padding-top: 49px;
   .sun-demo-nav-title {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px;
   }
   .sun-demo-block {
     padding: 0;
+  }
+  .sun-demo-nav-row {
+    background-color: #fff;
   }
 }
 </style>

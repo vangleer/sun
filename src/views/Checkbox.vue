@@ -81,18 +81,11 @@
         <sun-checkbox name="c">复选框 c</sun-checkbox>
       </sun-checkbox-group>
 
-      <sun-button type="primary" @click="checkAll">全选</sun-button>
-      <sun-button type="info" @click="toggleAll">反选</sun-button>
+     <div style="margin-top:10px;">
+        <sun-button type="primary" @click="checkAll">全选</sun-button>
+        <sun-button type="info" @click="toggleAll">反选</sun-button>
+     </div>
     </div>
-
-
-
-
-
-
-
-
-
 
   </div>
 </template>
@@ -128,14 +121,7 @@
 
 <style lang="less">
   .sun-demo-checkbox {
-    margin-top: 49px;
-    min-height: 96vh;
-
-    .sun-demo-nav-title {
-      padding: 16px 3px;
-      margin: 0;
-    }
-
+    background-color: #fff;
     .sun-demo-block {
       padding: 0 16px;
       margin-bottom: 10px;

@@ -103,17 +103,6 @@ export default {}
 </script>
 
 <style lang="less">
-.sun-demo-button {
-  padding-top: 49px;
-  h2.sun-demo-nav-title {
-    margin: 0;
-    padding: 16px 0;
-    color: rgba(69, 90, 100, 0.6);
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
 .sun-demo-block {
   padding: 0 16px;
 }

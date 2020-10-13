@@ -72,17 +72,7 @@
 
 <style lang="less">
   .sun-demo-swipe {
-    margin-top: 49px;
     padding-bottom: 20px;
-    background-color: #f8f8f8;
-
-    .sun-demo-block {
-      .sun-demo-nav-title {
-        margin: 0;
-        padding: 20px 16px 12px;
-      }
-
-    }
 
     .my-swipe .sun-swipe-item {
       color: #fff;

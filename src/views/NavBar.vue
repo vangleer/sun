@@ -44,21 +44,13 @@
 
 <style lang="less">
   .sun-demo-nav-bar {
-    margin-top: 49px;
-    width: 100vw;
-    height: 100vh;
-    background-color: #f8f8f8;
-
     .sun-demo-nav-title {
-      padding: 16px 16px 12px;
+      padding: 16px;
     }
-
     .sun-demo-nav-box {
-      position: relative;
-      height: 30px;
 
       .sun-nav-bar {
-        position: absolute;
+        position: relative;
         background-color: #fff;
         color: #1989fa;
 

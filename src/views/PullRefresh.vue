@@ -58,7 +58,6 @@
 
 <style lang="less" scoped>
   .sun-demo-pull-refresh {
-    padding-top: 49px;
     width: 100vw;
     height: 100vh;
     overflow: hidden;

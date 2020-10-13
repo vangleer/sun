@@ -7,17 +7,35 @@
 </template>
 
 <script>
-export default {}
+export default {
+  watch:{
+    $route(to,from){
+      console.log(to.path);
+      let parentPath = 'https://java0088.github.io/sun-ui-client/dist/#'
+      window.parent.location.href = parentPath+to.path
+      document.documentElement.scrollTop = 0
+    }
+  }
+}
 </script>
 
-<style>
+<style lang="less">
 html::-webkit-scrollbar {
   width: 0;
   background-color: transparent;
 }
 .sun-demo-nav-title {
-  margin: 24px 0 8px 0;
+  padding: 16px 0;
   color: rgba(69, 90, 100, 0.6);
   font-size: 14px;
+}
+.app {
+  padding-top: 49px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  .sun-nav-bar {
+    background-color: #fff ;
+  }
 }
 </style>

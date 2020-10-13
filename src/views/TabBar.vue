@@ -98,11 +98,9 @@
 
 <style lang="less">
   .sun-demo-tab-bar {
-    margin-top: 49px;
-    width: 100vw;
-    height: 100vh;
-    background-color: #f8f8f8;
-
+    .sun-demo-nav-title {
+      padding: 16px;
+    }
     .sun-tabbar {
       position: relative;
       top: 0;
@@ -110,16 +108,10 @@
       background-color: #fff;
     }
 
-    .sun-demo-nav-title {
-      padding: 16px 16px 12px;
-    }
-
     .sun-demo-nav-box {
-      position: relative;
-      height: 30px;
 
       .sun-nav-bar {
-        position: absolute;
+        position: relative;
         background-color: #fff;
         color: #1989fa;
 

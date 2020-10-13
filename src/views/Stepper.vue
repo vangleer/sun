@@ -65,7 +65,7 @@
 </script>
 
 <style lang="less">
-  .sun-demo-stepper {
-    padding-top: 49px;
-  }
+.sun-demo-stepper .sun-demo-block {
+  background-color: #fff;
+}
 </style>

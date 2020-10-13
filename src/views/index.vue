@@ -1,5 +1,6 @@
 <template>
   <div class="sun-demo-home">
+    <sun-nav-bar />
     <div class="sun-demo-header">
       <h1>
         <img src="https://img.yzcdn.cn/vant/logo.png" alt="阳光" />
@@ -40,7 +41,7 @@
   .sun-demo-home {
     width: 100%;
     min-height: 100vh;
-    padding: 46px 20px 20px;
+    padding: 0 20px 20px;
     background: #fff;
   }
 

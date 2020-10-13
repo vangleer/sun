@@ -154,10 +154,6 @@ export default {
 
 <style lang="less" scoped>
 .sun-demo-icon {
-  padding-top: 49px;
-  height: 100vh;
-  background-color: #f8f8f8;
-
   .sun-tab-item {
     font-size: 14px;
   }

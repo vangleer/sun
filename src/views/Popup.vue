@@ -99,23 +99,14 @@
 
 <style lang="less">
   .sun-demo-popup {
-    margin-top: 49px;
-    min-height: 96vh;
-    background-color: #f8f8f8;
-
     .sun-demo-block {
       padding: 0 16px;
     }
-
-    .sun-demo-nav-title {
-      padding: 16px 3px;
-      margin: 0;
-    }
-
     .sun-demo-nav-row {
       background-color: #fff;
       border-radius: 12px;
       margin-bottom: 10px;
+      cursor: pointer;
     }
   }
 </style>

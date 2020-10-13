@@ -124,10 +124,11 @@
 
 <style lang="less">
   .sun-demo-layout {
-    padding-top: 49px;
-
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
     .sun-demo-block {
-      padding: 0 16px;
+      padding: 0 16px 16px;
       overflow: hidden;
     }
 
