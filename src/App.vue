@@ -11,7 +11,7 @@ export default {
   watch:{
     $route(to,from){
       console.log(to.path);
-      let parentPath = 'https://java0088.github.io/sun-ui-client/dist/#'
+      let parentPath = 'https://java0088.github.io/sun-ui-client/dist/index.html/#'
       window.parent.location.href = parentPath+to.path
       document.documentElement.scrollTop = 0
     }
