@@ -3,7 +3,7 @@
     <sun-nav-bar left-arrow @left-click="$router.back()" title="Swipe" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">基础用法</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <sun-swipe class="my-swipe" :autoplay="3000">
         <sun-swipe-item>1</sun-swipe-item>
         <sun-swipe-item>2</sun-swipe-item>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">监听 change 事件</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunSwipe.title3')}}</h2>
       <sun-swipe class="my-swipe" @change="onChange">
         <sun-swipe-item>1</sun-swipe-item>
         <sun-swipe-item>2</sun-swipe-item>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">纵向滚动</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunSwipe.title4')}}</h2>
       <sun-swipe class="my-swipe" vertical>
         <sun-swipe-item>1</sun-swipe-item>
         <sun-swipe-item>2</sun-swipe-item>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义指示器</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunSwipe.title6')}}</h2>
       <sun-swipe class="my-swipe" @change="onChange2">
         <sun-swipe-item>1</sun-swipe-item>
         <sun-swipe-item>2</sun-swipe-item>
@@ -60,7 +60,7 @@
     },
     methods: {
       onChange(index) {
-        this.$toast('当前索引是: ' + index)
+        this.$toast(this.$t('sunSwipe.message') + index)
       },
       onChange2(index) {
         this.current = index;
@@ -94,6 +94,9 @@
       font-size: 12px;
       background: rgba(0, 0, 0, 0.1);
       color: #fff;
+    }
+    .sun-demo-nav-title {
+      padding-left: 12px;
     }
   }
 </style>

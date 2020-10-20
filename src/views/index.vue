@@ -3,18 +3,18 @@
     <sun-nav-bar />
     <div class="sun-demo-header">
       <h1>
-        <img src="https://img.yzcdn.cn/vant/logo.png" alt="阳光" />
+        <img src="../assets/logo-green.png" alt="阳光" />
         <span>Sun</span>
       </h1>
-      <p class="sun-demo-home-desc">轻量、可靠的移动端 Vue 组件库</p>
+      <p class="sun-demo-home-desc">{{$t('common.sunDesc')}}</p>
     </div>
 
     <div class="sun-demo-home-nav">
       <div v-for="(item, index) in homeList" :key="index">
-        <div class="sun-demo-home-nav-title">{{ item.desc }}</div>
+        <div class="sun-demo-home-nav-title">{{ $i18n.locale==='zh-CN'?item.desc:item.enDesc }}</div>
         <div class="sun-demo-home-nav-group" v-for="(item2, index2) in item.group" :key="index2">
-          <div class="sun-demo-home-nav-block" @click="$router.push(item2.path)">
-            <span>{{ item2.text }}</span>
+          <div class="sun-demo-home-nav-block" @click="$router.push('/'+$i18n.locale+item2.path)">
+            <span>{{ $i18n.locale==='zh-CN'?item2.text:item2.enText }}</span>
             <sun-icon name="arrow-right" color="rgba(69, 90, 100, 0.6)" />
           </div>
         </div>
@@ -54,8 +54,8 @@
     }
 
     img {
-      width: 32px;
-      margin-right: 16px;
+      width: 40px;
+      margin-right: 8px;
     }
   }
 

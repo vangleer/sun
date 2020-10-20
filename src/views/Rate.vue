@@ -4,40 +4,40 @@
 
     <!-- 基础用法 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">基础用法</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <sun-rate v-model="value" />
     </div>
 
     <!-- 自定义图标 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义图标</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunRate.customIcon')}}</h2>
       <sun-rate v-model="value2" icon="like" void-icon="like-o" />
     </div>
 
     <!-- 自定义样式 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义样式</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunRate.customStyle')}}</h2>
       <sun-rate v-model="value3" :size="25" color="#ffd21e" void-icon="star-f" void-color="#eee" />
     </div>
 
     <!-- 自定义数量 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义数量</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunRate.customCount')}}</h2>
       <sun-rate v-model="value4" :count="6" />
     </div>
     <!-- 禁用状态 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">禁用状态</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunRate.disabled')}}</h2>
       <sun-rate v-model="value5" disabled />
     </div>
     <!-- 只读状态 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">只读状态</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunRate.readonly')}}</h2>
       <sun-rate v-model="value6" readonly />
     </div>
     <!-- 监听 change 事件 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">监听 change 事件</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunRate.changeEvent')}}</h2>
       <sun-rate v-model="value7" @change="onChange" />
     </div>
 
@@ -59,7 +59,7 @@
     },
     methods: {
       onChange(value) {
-        this.$toast('当前值：' + value);
+        this.$toast('Current Value: ' + value);
       }
     }
   }
@@ -67,7 +67,7 @@
 
 <style lang="less">
   .sun-demo-rate {
-    min-height: 96vh;
+    min-height: 100vh;
     background-color: #fff;
     .sun-demo-block {
       padding: 0 16px;

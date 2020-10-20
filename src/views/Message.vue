@@ -3,52 +3,52 @@
     <sun-nav-bar left-arrow @left-click="$router.back()" title="Message" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">基础用法</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="文字提示" is-link bg-cffect @click="$message('提示内容')" />
+        <sun-cell :title="$t('sunMessage.textTip')" is-link bg-cffect @click="$message($t('sunMessage.textTip'))" />
       </div>
     </div>
 
     <!-- 消息类型 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">消息类型</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunMessage.messageType')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="成功消息" is-link bg-cffect @click="$message({message:'成功消息',type:'success'})" />
-        <sun-cell title="失败消息" is-link bg-cffect @click="$message({message:'失败消息',type:'error'})" />
-        <sun-cell title="信息提示" is-link bg-cffect @click="$message({message:'信息提示',type:'info'})" />
-        <sun-cell title="警告消息" is-link bg-cffect @click="$message({message:'警告消息',type:'warning'})" />
-        <sun-cell title="加载消息" is-link bg-cffect @click="$message({message:'加载消息',type:'loading'})" />
+        <sun-cell :title="$t('sunMessage.success')" is-link bg-cffect @click="$message({message:$t('sunMessage.success'),type:'success'})" />
+        <sun-cell :title="$t('sunMessage.danger')" is-link bg-cffect @click="$message({message:$t('sunMessage.danger'),type:'error'})" />
+        <sun-cell :title="$t('sunMessage.primary')" is-link bg-cffect @click="$message({message:$t('sunMessage.primary'),type:'info'})" />
+        <sun-cell :title="$t('sunMessage.warning')" is-link bg-cffect @click="$message({message:$t('sunMessage.warning'),type:'warning'})" />
+        <sun-cell :title="$t('sunMessage.loading')" is-link bg-cffect @click="$message({message:$t('sunMessage.loading'),type:'loading'})" />
       </div>
     </div>
 
     <!-- 是否显示边框 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">是否显示边框</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunMessage.success')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="成功消息" is-link bg-cffect @click="$message({message:'成功消息',type:'success',border:true})" />
-        <sun-cell title="失败消息" is-link bg-cffect @click="$message({message:'失败消息',type:'error',border:true})" />
+        <sun-cell :title="$t('sunMessage.success')" is-link bg-cffect @click="$message({message:$t('sunMessage.success'),type:'success',border:true})" />
+        <sun-cell :title="$t('sunMessage.danger')" is-link bg-cffect @click="$message({message:$t('sunMessage.danger'),type:'error',border:true})" />
       </div>
     </div>
 
     <!-- 显示位置 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">显示位置</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunMessage.position')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="成功消息" is-link bg-cffect
-          @click="$message({message:'成功消息',type:'success',border:true,position:'center'})" />
-        <sun-cell title="失败消息" is-link bg-cffect
-          @click="$message({message:'失败消息',type:'error',border:true,position:'bottom'})" />
+        <sun-cell :title="$t('sunMessage.success')" is-link bg-cffect
+          @click="$message({message:$t('sunMessage.success'),type:'success',border:true,position:'center'})" />
+        <sun-cell :title="$t('sunMessage.danger')" is-link bg-cffect
+          @click="$message({message:$t('sunMessage.danger'),type:'error',border:true,position:'bottom'})" />
       </div>
     </div>
 
     <!-- 自定义配置 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义配置</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunMessage.customMessage')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="自定义时长" is-link bg-cffect
-          @click="$message({message:'自定义时长',type:'success',border:true,duration:3000})" />
-        <sun-cell title="自定义颜色" is-link bg-cffect @click="$message({message:'自定义颜色',border:true,color:'pink'})" />
-        <sun-cell title="自定义图标" is-link bg-cffect @click="$message({message:'自定义图标',border:true,icon:'plus'})" />
+        <sun-cell :title="$t('sunMessage.customDuration')" is-link bg-cffect
+          @click="$message({message:$t('sunMessage.customDuration'),type:'success',border:true,duration:3000})" />
+        <sun-cell :title="$t('sunMessage.customColor')" is-link bg-cffect @click="$message({message:$t('sunMessage.customColor'),border:true,color:'pink'})" />
+        <sun-cell :title="$t('sunMessage.customIcon')" is-link bg-cffect @click="$message({message:$t('sunMessage.customIcon'),border:true,icon:'plus'})" />
       </div>
     </div>
   </div>

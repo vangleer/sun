@@ -3,32 +3,32 @@
     <sun-nav-bar left-arrow @left-click="$router.back()" title="Toast" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">基础用法</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="文字提示" is-link bg-cffect @click="$toast('提示内容')" />
-        <sun-cell title="加载提示" is-link bg-cffect @click="$toast.loading('加载中...')" />
-        <sun-cell title="成功提示" is-link bg-cffect @click="$toast.success('成功提示')" />
-        <sun-cell title="失败提示" is-link bg-cffect @click="$toast.fail('失败提示')" />
+        <sun-cell :title="$t('sunToast.title1')" is-link bg-cffect @click="$toast($t('sunToast.text'))" />
+        <sun-cell :title="$t('sunToast.title2')" is-link bg-cffect @click="$toast.loading($t('sunButton.loadingText'))" />
+        <sun-cell :title="$t('sunToast.success')" is-link bg-cffect @click="$toast.success($t('sunToast.success'))" />
+        <sun-cell :title="$t('sunToast.fail')" is-link bg-cffect @click="$toast.fail($t('sunToast.fail'))" />
       </div>
     </div>
 
     <!-- 自定义图标 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义图标</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunToast.customIcon')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="自定义图标" is-link bg-cffect @click="$toast({message:'自定义图标',icon:'like-o'})" />
-        <sun-cell title="自定义图片" is-link bg-cffect
-          @click="$toast.loading({message:'自定义图片',icon:'https://img.yzcdn.cn/vant/logo.png'})" />
-        <sun-cell title="自定义加载图标" is-link bg-cffect @click="$toast.loading({message:'加载中...',icon:'loading2'})" />
+        <sun-cell :title="$t('sunToast.customIcon')" is-link bg-cffect @click="$toast({message:$t('sunToast.customIcon'),icon:'like-o'})" />
+        <sun-cell :title="$t('sunToast.customImage')" is-link bg-cffect
+          @click="$toast.loading({message:$t('sunToast.customImage'),icon:'https://img.yzcdn.cn/vant/logo.png'})" />
+        <sun-cell :title="$t('sunToast.loadingType')" is-link bg-cffect @click="$toast.loading({message:$t('sunButton.loadingText'),icon:'loading2'})" />
       </div>
     </div>
 
     <!-- 自定义位置 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义位置</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunToast.customPosition')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="顶部展示" is-link bg-cffect @click="$toast({message:'顶部展示', position: 'top'})" />
-        <sun-cell title="底部展示" is-link bg-cffect @click="$toast({message:'底部展示', position: 'bottom'})" />
+        <sun-cell :title="$t('sunToast.positionTop')" is-link bg-cffect @click="$toast({message:$t('sunToast.positionTop'), position: 'top'})" />
+        <sun-cell :title="$t('sunToast.positionBottom')" is-link bg-cffect @click="$toast({message:$t('sunToast.positionBottom'), position: 'bottom'})" />
       </div>
     </div>
 

@@ -3,18 +3,18 @@
     <sun-nav-bar title="NavBar" left-arrow @left-click="$router.back()" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">基础用法</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <div class="sun-demo-nav-box">
-        <sun-nav-bar title="标题" left-text="返回" right-text="按钮" left-arrow @click-left="onClickLeft"
+        <sun-nav-bar :title="$t('common.title')" :left-text="$t('common.back')" :right-text="$t('common.button')" left-arrow @click-left="onClickLeft"
           @click-right="onClickRight" />
       </div>
     </div>
 
     <!-- 使用插槽 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">使用插槽</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.useSlots')}}</h2>
       <div class="sun-demo-nav-box">
-        <sun-nav-bar title="标题" left-text="返回" left-arrow>
+        <sun-nav-bar :title="$t('common.title')" :left-text="$t('common.back')" left-arrow>
           <template #right>
             <sun-icon name="plus" size="18" />
           </template>
@@ -32,10 +32,11 @@
     },
     methods: {
       onClickLeft() {
-        this.$toast('返回');
+        console.log('lalal')
+        this.$toast(this.$t('common.back'));
       },
       onClickRight() {
-        this.$Toast('按钮');
+        this.$toast(this.$t('common.button'));
       },
     },
     created() {}

@@ -5,43 +5,43 @@
     <!-- 基础用法 -->
     <div class="sun-demo-block">
       <!-- <sun-cell is-link @click="showPopup">展示弹出层</sun-cell>\n<sun-popup v-model="show">内容</sun-popup> -->
-      <h2 class="sun-demo-nav-title">基础用法</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="弹出层展示" is-link bg-cffect @click="handleShow('center')" />
+        <sun-cell :title="$t('sunPopup.buttonBasic')" is-link bg-cffect @click="handleShow('center')" />
       </div>
     </div>
     <!-- 弹出位置 -->
     <div class="sun-demo-block">
       <!-- <sun-cell is-link @click="showPopup">展示弹出层</sun-cell>\n<sun-popup v-model="show">内容</sun-popup> -->
-      <h2 class="sun-demo-nav-title">弹出位置</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunPopup.position')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="顶部弹出" is-link bg-cffect @click="handleShow('top')" />
-        <sun-cell title="底部弹出" is-link bg-cffect @click="handleShow('bottom')" />
-        <sun-cell title="左侧弹出" is-link bg-cffect @click="handleShow('left')" />
-        <sun-cell title="右侧弹出" is-link bg-cffect @click="handleShow('right')" />
+        <sun-cell :title="$t('sunPopup.buttonTop')" is-link bg-cffect @click="handleShow('top')" />
+        <sun-cell :title="$t('sunPopup.buttonBottom')" is-link bg-cffect @click="handleShow('bottom')" />
+        <sun-cell :title="$t('sunPopup.buttonLeft')" is-link bg-cffect @click="handleShow('left')" />
+        <sun-cell :title="$t('sunPopup.buttonRight')" is-link bg-cffect @click="handleShow('right')" />
       </div>
     </div>
 
     <!-- 关闭图标 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">关闭图标</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunPopup.closeIcon')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="关闭图标" is-link bg-cffect @click="showClose1=true" />
-        <sun-cell title="自定义图标" is-link bg-cffect @click="showClose2=true" />
-        <sun-cell title="图标位置" is-link bg-cffect @click="showClose3=true" />
+        <sun-cell :title="$t('sunPopup.closeIcon')" is-link bg-cffect @click="showClose1=true" />
+        <sun-cell :title="$t('sunPopup.customCloseIcon')" is-link bg-cffect @click="showClose2=true" />
+        <sun-cell :title="$t('sunPopup.customIconPosition')" is-link bg-cffect @click="showClose3=true" />
       </div>
     </div>
 
     <!-- 圆角弹窗 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">圆角弹窗</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunPopup.roundCorner')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="圆角弹窗" is-link bg-cffect @click="showRound=true" />
+        <sun-cell :title="$t('sunPopup.roundCorner')" is-link bg-cffect @click="showRound=true" />
       </div>
     </div>
 
     <!-- 基础展示 -->
-    <sun-popup v-model="showCenter" position="center">内容</sun-popup>
+    <sun-popup v-model="showCenter" position="center">{{$t('common.content')}}</sun-popup>
     <sun-popup v-model="showTop" position="top" />
     <sun-popup v-model="showBottom" position="bottom" />
     <sun-popup v-model="showLeft" position="left" />

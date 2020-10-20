@@ -3,48 +3,48 @@
     <sun-nav-bar left-arrow @left-click="$router.back()" title="Cell" />
     <!-- 基础展示 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">基础展示</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="单元格" value="内容" />
-        <sun-cell title="单元格" value="内容" label="描述信息" />
+        <sun-cell :title="$t('sunCell.cell')" :value="$t('common.content')" />
+        <sun-cell :title="$t('sunCell.cell')" :value="$t('common.content')" :label="$t('common.describeInfo')" />
       </div>
     </div>
 
     <!-- 图标展示 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">图标展示</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunCell.showIcon')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell icon="friends" title="单元格" value="内容" />
+        <sun-cell icon="friends" :title="$t('sunCell.cell')" :value="$t('common.content')" />
       </div>
     </div>
 
     <!-- 展示箭头 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">展示箭头</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunCell.showArrow')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="单元格" is-link />
-        <sun-cell title="单元格" is-link value="内容" />
-        <sun-cell title="单元格" is-link arrow-direction="down" value="内容" />
+        <sun-cell :title="$t('sunCell.cell')" is-link />
+        <sun-cell :title="$t('sunCell.cell')" is-link :value="$t('common.content')" />
+        <sun-cell :title="$t('sunCell.cell')" is-link arrow-direction="down" :value="$t('common.content')" />
       </div>
     </div>
 
     <!-- 点击背景效果 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">点击背景效果</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunCell.background')}}</h2>
       <div class="sun-demo-nav-row">
-        <sun-cell title="单元格" :bgEffect="true" />
-        <sun-cell title="单元格" :bgEffect="false" value="内容" />
+        <sun-cell :title="$t('sunCell.cell')" :bgEffect="true" />
+        <sun-cell :title="$t('sunCell.cell')" :bgEffect="false" :value="$t('common.content')" />
       </div>
     </div>
 
     <!-- 使用插槽 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">使用插槽</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.useSlots')}}</h2>
       <div class="sun-demo-nav-row">
         <sun-cell>
           <template #title>
-            <span>这是单元格</span>
-            <sun-button size="mini" type="danger">按钮</sun-button>
+            <span>{{$t('sunCell.otherCell')}}</span>
+            <sun-button size="mini" type="danger">{{$t('common.button')}}</sun-button>
           </template>
         </sun-cell>
       </div>

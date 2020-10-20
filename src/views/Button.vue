@@ -6,92 +6,92 @@
     <div class="sun-demo-nav">
       <!-- 按钮类型 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">按钮类型</h2>
+        <h2 class="sun-demo-nav-title">{{$t('sunButton.type')}}</h2>
         <div class="sun-demo-nav-row">
-          <sun-button type="primary">主要按钮</sun-button>
-          <sun-button type="info">信息按钮</sun-button>
-          <sun-button>默认按钮</sun-button>
-          <sun-button type="danger">危险按钮</sun-button>
-          <sun-button type="warning">警告按钮</sun-button>
+          <sun-button type="primary">{{$t('sunButton.primary')}}</sun-button>
+          <sun-button type="info">{{$t('sunButton.info')}}</sun-button>
+          <sun-button>{{$t('sunButton.default')}}</sun-button>
+          <sun-button type="danger">{{$t('sunButton.danger')}}</sun-button>
+          <sun-button type="warning">{{$t('sunButton.warning')}}</sun-button>
         </div>
       </div>
       <!-- 禁用状态 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">禁用状态</h2>
+        <h2 class="sun-demo-nav-title">{{$t('common.disabled')}}</h2>
         <div class="sun-demo-nav-row">
           <sun-button type="primary"
-                      disabled>禁用状态</sun-button>
+                      disabled>{{$t('common.disabled')}}</sun-button>
           <sun-button type="info"
-                      disabled>禁用状态</sun-button>
+                      disabled>{{$t('common.disabled')}}</sun-button>
         </div>
       </div>
       <!-- 朴素按钮 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">朴素按钮</h2>
+        <h2 class="sun-demo-nav-title">{{$t('sunButton.plain')}}</h2>
         <div class="sun-demo-nav-row">
           <sun-button type="primary"
-                      plain>朴素按钮</sun-button>
+                      plain>{{$t('sunButton.plain')}}</sun-button>
           <sun-button type="info"
-                      plain>朴素按钮</sun-button>
+                      plain>{{$t('sunButton.plain')}}</sun-button>
         </div>
       </div>
       <!-- 按钮形状 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">按钮形状</h2>
+        <h2 class="sun-demo-nav-title">{{$t('sunButton.shape')}}</h2>
         <div class="sun-demo-nav-row">
-          <sun-button type="primary">方形按钮</sun-button>
+          <sun-button type="primary">{{$t('sunButton.square')}}</sun-button>
           <sun-button type="info"
-                      round>圆形按钮</sun-button>
+                      round>{{$t('sunButton.round')}}</sun-button>
         </div>
       </div>
       <!-- 图标按钮 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">图标按钮</h2>
+        <h2 class="sun-demo-nav-title">{{$t('sunButton.icon')}}</h2>
         <div class="sun-demo-nav-row">
           <sun-button type="primary"
                       icon="plus"></sun-button>
           <sun-button type="primary"
-                      icon="plus">按钮</sun-button>
+                      icon="plus">{{$t('common.button')}}</sun-button>
           <sun-button type="info"
                       plain
-                      icon="friends">按钮</sun-button>
+                      icon="friends">{{$t('common.button')}}</sun-button>
         </div>
       </div>
 
       <!-- 按钮边框效果 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">按钮边框阴影效果</h2>
+        <h2 class="sun-demo-nav-title">{{$t('sunButton.borderEffect')}}</h2>
         <div class="sun-demo-nav-row">
           <sun-button type="primary"
-                      isExtra>开起点击边框阴影</sun-button>
+                      isExtra>{{$t('sunButton.showEffect')}}</sun-button>
           <sun-button type="info"
-                      effectWidth="10px" isExtra>调整效果大小</sun-button>
+                      effectWidth="10px" isExtra>{{$t('sunButton.adjustEffect')}}</sun-button>
         </div>
       </div>
 
       <!-- 按钮尺寸 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">按钮尺寸</h2>
+        <h2 class="sun-demo-nav-title">{{$t('sunButton.size')}}</h2>
         <div class="sun-demo-nav-row">
           <sun-button type="primary"
-                      size="large">大号按钮</sun-button>
+                      size="large">{{$t('sunButton.large')}}</sun-button>
           <sun-button type="primary"
-                      size="default">普通按钮</sun-button>
+                      size="default">{{$t('sunButton.normal')}}</sun-button>
           <sun-button type="info"
-                      size="small">小型按钮</sun-button>
+                      size="small">{{$t('sunButton.small')}}</sun-button>
           <sun-button type="danger"
-                      size="mini">迷你按钮</sun-button>
+                      size="mini">{{$t('sunButton.mini')}}</sun-button>
         </div>
       </div>
 
       <!-- 自定义颜色 -->
       <div class="sun-demo-block">
-        <h2 class="sun-demo-nav-title">自定义颜色</h2>
+        <h2 class="sun-demo-nav-title">{{$t('sunButton.customColor')}}</h2>
         <div class="sun-demo-nav-row">
-          <sun-button color="#7232dd">单色按钮</sun-button>
+          <sun-button color="#7232dd">{{$t('sunButton.pure')}}</sun-button>
           <sun-button color="#7232dd"
-                      plain>单色按钮</sun-button>
-          <sun-button color="linear-gradient(to right, #ff6034, #ee0a24)">渐变按钮</sun-button>
+                      plain>{{$t('sunButton.pure')}}</sun-button>
+          <sun-button color="linear-gradient(to right, #ff6034, #ee0a24)">{{$t('sunButton.gradient')}}</sun-button>
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@
       <div class="sun-demo-icon-box1" v-show="currentIndex === 0">
         <!-- 基础用法 -->
         <div class="sun-demo-block">
-          <h2 class="sun-demo-nav-title">基础用法</h2>
+          <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
           <!-- <code>Icon</code>的<code>name</code>属性支持传入图标名称或图片链接，所有可用的图标名称见右侧示例 -->
           <div class="sun-demo-nav-row">
             <sun-icon name="message-o" />
@@ -30,7 +30,7 @@
         </div>
         <!-- 徽标提示 -->
         <div class="sun-demo-block">
-          <h2 class="sun-demo-nav-title">徽标提示</h2>
+          <h2 class="sun-demo-nav-title">{{$t('sunIcon.badge')}}</h2>
           <!-- 设置<code>dot</code>属性后，会在图标右上角展示一个小红点。设置<code>badge</code>属性后，会在图标右上角展示相应的徽标 -->
           <div class="sun-demo-nav-row">
             <sun-icon name="message-o" dot />
@@ -40,7 +40,7 @@
         </div>
         <!-- 图标颜色 -->
         <div class="sun-demo-block">
-          <h2 class="sun-demo-nav-title">图标颜色</h2>
+          <h2 class="sun-demo-nav-title">{{$t('sunIcon.color')}}</h2>
           <!-- <code>Icon</code>的<code>color</code>属性用来设置图标的颜色 -->
           <div class="sun-demo-nav-row">
             <sun-icon name="message-o" color="#1989fa" />
@@ -50,7 +50,7 @@
 
         <!-- 图标大小 -->
         <div class="sun-demo-block">
-          <h2 class="sun-demo-nav-title">图标大小</h2>
+          <h2 class="sun-demo-nav-title">{{$t('sunIcon.size')}}</h2>
           <!-- <code>Icon</code>的<code>size</code>属性用来设置图标的尺寸大小，默认单位为px -->
           <div class="sun-demo-nav-row">
             <sun-icon name="message-o" size="40" />
@@ -111,7 +111,7 @@ import Clipboard from 'clipboard'
 export default {
   data() {
     return {
-      tabList: ['用法示例', '基础图标', '线框风格', '实底风格'],
+      tabList: [this.$t('sunIcon.demo'), this.$t('sunIcon.basic'), this.$t('sunIcon.outline'), this.$t('sunIcon.filled')],
       currentIndex: 0,
       baseIcon: data.baseIcon,
       lineStyleIcon: data.lineStyleIcon,
@@ -135,14 +135,14 @@ export default {
 
       clipboard.on('success', (e) => {
         this.$message.success({
-          message: `复制成功: <sun-icon name="${item}" />`,
+          message: `${this.$t('sunIcon.copySuccess')}: <sun-icon name="${item}" />`,
           border: true,
         })
         clipboard.destroy() // 释放内存
       })
       clipboard.on('error', (e) => {
         this.$message.warning({
-          message: `该手机不支持自动复制`,
+          message: this.$t('sunIcon.noSuport'),
           border: true,
         })
         clipboard.destroy() // 释放内存

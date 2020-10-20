@@ -4,69 +4,69 @@
 
     <!-- 基础用法 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">基础用法</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
       <div class="sun-demo-nav-box">
         <sun-tabbar v-model="active">
-          <sun-tabbar-item icon="home">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="category">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="friends">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="settings">标签</sun-tabbar-item>
+          <sun-tabbar-item icon="home">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="category">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="friends">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="settings">{{$t('common.tag')}}</sun-tabbar-item>
         </sun-tabbar>
       </div>
     </div>
 
     <!-- 徽标提示 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">徽标提示</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunTabbar.badge')}}</h2>
       <div class="sun-demo-nav-box">
         <sun-tabbar v-model="active2">
-          <sun-tabbar-item icon="home">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="category" dot>标签</sun-tabbar-item>
-          <sun-tabbar-item icon="friends" badge="20">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="settings" badge="5">标签</sun-tabbar-item>
+          <sun-tabbar-item icon="home">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="category" dot>{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="friends" badge="20">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="settings" badge="5">{{$t('common.tag')}}</sun-tabbar-item>
         </sun-tabbar>
       </div>
     </div>
 
     <!-- 自定义图标 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义图标</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunTabbar.customIcon')}}</h2>
       <div class="sun-demo-nav-box">
         <sun-tabbar v-model="active3">
           <sun-tabbar-item icon="home">
-            <span>自定义</span>
+            <span>{{$t('common.custom')}}</span>
             <template #icon>
               <sun-icon name="star-f" />
             </template>
           </sun-tabbar-item>
-          <sun-tabbar-item icon="category">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="friends">标签</sun-tabbar-item>
+          <sun-tabbar-item icon="category">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="friends">{{$t('common.tag')}}</sun-tabbar-item>
         </sun-tabbar>
       </div>
     </div>
 
     <!-- 自定义颜色 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">自定义颜色</h2>
+      <h2 class="sun-demo-nav-title">{{$t('common.customColor')}}</h2>
       <div class="sun-demo-nav-box">
         <sun-tabbar v-model="active4" active-color="#07c160" inactive-color="#000">
-          <sun-tabbar-item icon="home">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="category">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="friends">标签</sun-tabbar-item>
-          <sun-tabbar-item icon="settings">标签</sun-tabbar-item>
+          <sun-tabbar-item icon="home">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="category">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="friends">{{$t('common.tag')}}</sun-tabbar-item>
+          <sun-tabbar-item icon="settings">{{$t('common.tag')}}</sun-tabbar-item>
         </sun-tabbar>
       </div>
     </div>
 
     <!-- 监听事件切换 -->
     <div class="sun-demo-block">
-      <h2 class="sun-demo-nav-title">监听事件切换</h2>
+      <h2 class="sun-demo-nav-title">{{$t('sunTabbar.switchEvent')}}</h2>
       <div class="sun-demo-nav-box">
         <sun-tabbar v-model="active5" @change="onChange">
-          <sun-tabbar-item icon="home">标签1</sun-tabbar-item>
-          <sun-tabbar-item icon="category">标签2</sun-tabbar-item>
-          <sun-tabbar-item icon="friends">标签3</sun-tabbar-item>
-          <sun-tabbar-item icon="settings">标签4</sun-tabbar-item>
+          <sun-tabbar-item icon="home">{{$t('common.tag')}}1</sun-tabbar-item>
+          <sun-tabbar-item icon="category">{{$t('common.tag')}}2</sun-tabbar-item>
+          <sun-tabbar-item icon="friends">{{$t('common.tag')}}3</sun-tabbar-item>
+          <sun-tabbar-item icon="settings">{{$t('common.tag')}}4</sun-tabbar-item>
         </sun-tabbar>
       </div>
     </div>
@@ -89,7 +89,7 @@
       onChange(index) {
         this.$message({
           type: 'success',
-          message: `你切换到了标签 ${index+1}`
+          message: `${this.$t('sunTabbar.selectTip')} ${index+1}`
         })
       },
     },
