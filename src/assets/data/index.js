@@ -26,6 +26,11 @@ let data = {
         text: 'Toast 轻提示',
         enText:'Toast',
         path: '/toast'
+      },
+      {
+        text: 'Dialog 弹出框',
+        enText:'Dialog',
+        path: '/dialog'
       }]
     },
     {
@@ -62,11 +67,23 @@ let data = {
     {
       desc: '展示组件',
       enDesc:'Display Components',
-      group: [{
-        text: 'Swipe 轮播图',
-        enText:'Swipe',
-        path: '/swipe'
-      }]
+      group: [
+        {
+          text: 'Swipe 轮播图',
+          enText:'Swipe',
+          path: '/swipe'
+        },
+        {
+          text: 'Collapse 折叠面板',
+          enText:'Collapse',
+          path: '/collapse'
+        },
+        {
+          text: 'Pagination 分页',
+          enText:'Pagination',
+          path: '/pagination'
+        }
+      ]
     },
     {
       desc: '导航组件',

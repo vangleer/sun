@@ -186,5 +186,13 @@ module.exports = {
     inverse: 'Inverse',
     horizontal: 'Horizontal',
     disableLabel: 'Disable label click',
+  },
+  sunDialog:{
+    title:'Title',
+    alert1: 'Prompt Dialog',
+    alert2: 'Prompt Dialog（No Title）',
+    confirm: 'confirm',
+    roundButton: 'Round corner button style',
+    content: 'The code is written for people to see and can run on a machine',
   }
 }

@@ -188,5 +188,13 @@ module.exports = {
     inverse: '反选',
     horizontal: '水平排列',
     disableLabel: '禁用文本点击',
+  },
+  sunDialog:{
+    title:'标题',
+    alert1: '提示弹窗',
+    alert2: '提示弹窗（无标题）',
+    confirm: '确认弹窗',
+    roundButton: '圆角按钮样式',
+    content: '代码是写出来给人看的，附带能在机器上运行',
   }
 }
