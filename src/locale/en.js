@@ -194,5 +194,10 @@ module.exports = {
     confirm: 'confirm',
     roundButton: 'Round corner button style',
     content: 'The code is written for people to see and can run on a machine',
+  },
+  sunCollapse:{
+    accordion: 'Accordion',
+    titleSlot: 'Custom title',
+    text: 'Content',
   }
 }

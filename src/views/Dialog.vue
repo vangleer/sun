@@ -1,5 +1,5 @@
 <template>
-  <div class="sun-demo-toast">
+  <div class="sun-demo-dialog">
     <sun-nav-bar left-arrow @left-click="$router.back()" title="Dialog" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
@@ -59,14 +59,13 @@
       alert2(opt) {
         this.title = opt === 1 
         this.show2 = ! this.show2
-      }
+      },
     }
   }
 </script>
 
 <style lang="less">
-  .sun-demo-toast {
-
+  .sun-demo-dialog {
     .sun-demo-block {
       padding: 0 16px;
     }

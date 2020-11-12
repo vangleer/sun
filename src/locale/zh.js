@@ -196,5 +196,10 @@ module.exports = {
     confirm: '确认弹窗',
     roundButton: '圆角按钮样式',
     content: '代码是写出来给人看的，附带能在机器上运行',
+  },
+  sunCollapse:{
+    accordion: '手风琴',
+    titleSlot: '自定义标题内容',
+    text: '代码是写出来给人看的，附带能在机器上运行',
   }
 }
