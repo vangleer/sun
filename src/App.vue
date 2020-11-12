@@ -12,7 +12,8 @@ export default {
   watch:{
     $route(to,from){
       if(window.top.length!==0) {
-        let parentPath = window.top.location.origin+'/#'
+        let parentPath = 'https://java0088.github.io/sun-ui-client/dist/#' // 线上
+        // let parentPath = 'http://localhost:8082/#' // 测试
         window.parent.location.href = parentPath+to.path
         document.documentElement.scrollTop = 0
       }
