@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-layout">
-    <sun-nav-bar left-arrow @left-click="$router.back()" title="Col" style="background-color: #fff;" />
+    <sun-nav-bar left-arrow @click-left="$router.back()" title="Col" style="background-color: #fff;" />
     <!-- 基础展示 -->
     <div class="sun-demo-block">
       <!-- Layout 组件提供了<code>24列栅格</code>，通过在<code>Col</code>上添加<code>span</code>属性设置列所占的宽度百分比

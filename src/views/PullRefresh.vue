@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-pull-refresh">
-    <sun-nav-bar left-arrow @left-click="$router.back()" title="PullRefresh" />
+    <sun-nav-bar left-arrow @click-left="$router.back()" title="PullRefresh" />
     <sun-tabs>
       <div class="sun-tab-item" @click="currentIndex=0">基础用法</div>
       <div class="sun-tab-item" @click="currentIndex=1">成功提示</div>

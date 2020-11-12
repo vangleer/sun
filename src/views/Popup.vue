@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-popup">
-    <sun-nav-bar title="Popup" left-arrow @left-click="$router.back()" />
+    <sun-nav-bar title="Popup" left-arrow @click-left="$router.back()" />
 
     <!-- 基础用法 -->
     <div class="sun-demo-block">

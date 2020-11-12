@@ -143,6 +143,7 @@ module.exports = {
     title4: '纵向滚动',
     title5: '自定义滑块大小',
     title6: '自定义指示器',
+    title7: '方形指示器',
     message: '当前 Swipe 索引：',
   },
   sunSwitch:{

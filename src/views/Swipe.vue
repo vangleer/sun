@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-swipe">
-    <sun-nav-bar left-arrow @left-click="$router.back()" title="Swipe" />
+    <sun-nav-bar left-arrow @click-left="$router.back()" title="Swipe" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>
@@ -25,6 +25,16 @@
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">{{$t('sunSwipe.title4')}}</h2>
       <sun-swipe class="my-swipe" vertical>
+        <sun-swipe-item>1</sun-swipe-item>
+        <sun-swipe-item>2</sun-swipe-item>
+        <sun-swipe-item>3</sun-swipe-item>
+        <sun-swipe-item>4</sun-swipe-item>
+      </sun-swipe>
+    </div>
+
+    <div class="sun-demo-block">
+      <h2 class="sun-demo-nav-title">{{$t('sunSwipe.title7')}}</h2>
+      <sun-swipe class="my-swipe" square-indicators>
         <sun-swipe-item>1</sun-swipe-item>
         <sun-swipe-item>2</sun-swipe-item>
         <sun-swipe-item>3</sun-swipe-item>

@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-stepper">
-    <sun-nav-bar left-arrow @left-click="$router.back()" title="Stepper" />
+    <sun-nav-bar left-arrow @click-left="$router.back()" title="Stepper" />
 
     <!-- 基础用法 -->
     <div class="sun-demo-block">

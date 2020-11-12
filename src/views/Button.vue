@@ -1,7 +1,7 @@
 <template>
   <div class="sun-demo-button">
     <sun-nav-bar left-arrow
-                 @left-click="$router.back()"
+                 @click-left="$router.back()"
                  title="Button" />
     <div class="sun-demo-nav">
       <!-- 按钮类型 -->

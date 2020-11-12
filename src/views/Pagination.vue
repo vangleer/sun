@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-pagination">
-    <sun-nav-bar left-arrow @left-click="$router.back()" title="Pagination" style="background-color: #fff;" />
+    <sun-nav-bar left-arrow @click-left="$router.back()" title="Pagination" style="background-color: #fff;" />
     <!-- 基础展示 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>

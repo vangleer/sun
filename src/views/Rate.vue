@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-rate">
-    <sun-nav-bar title="Rate" left-arrow @left-click="$router.back()" />
+    <sun-nav-bar title="Rate" left-arrow @click-left="$router.back()" />
 
     <!-- 基础用法 -->
     <div class="sun-demo-block">

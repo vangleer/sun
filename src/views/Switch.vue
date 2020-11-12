@@ -1,6 +1,6 @@
 <template>
   <div class="sun-demo-switch">
-    <sun-nav-bar title="Switch" left-arrow @left-click="$router.back()" />
+    <sun-nav-bar title="Switch" left-arrow @click-left="$router.back()" />
     <!-- 基础用法 -->
     <div class="sun-demo-block">
       <h2 class="sun-demo-nav-title">{{$t('common.basicUsage')}}</h2>

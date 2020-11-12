@@ -141,6 +141,7 @@ module.exports = {
       title4: 'Vertical Scrolling',
       title5: 'Set SwipeItem Size',
       title6: 'Custom indicator',
+      title7: 'Square indicator',
       message: 'Current Swipe index:',
   },
   sunSwitch:{

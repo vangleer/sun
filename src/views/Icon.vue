@@ -2,7 +2,7 @@
   <div class="sun-demo-icon">
     <sun-nav-bar
       left-arrow
-      @left-click="$router.back()"
+      @click-left="$router.back()"
       title="Icon"
       style="background-color: #fff;"
     />
