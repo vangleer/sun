@@ -201,5 +201,11 @@ module.exports = {
     accordion: '手风琴',
     titleSlot: '自定义标题内容',
     text: '代码是写出来给人看的，附带能在机器上运行',
+  },
+  sunPage:{
+    title2: '简单模式',
+    title3: '显示省略号',
+    prevText: '上一页',
+    nextText: '下一页',
   }
 }

@@ -199,5 +199,11 @@ module.exports = {
     accordion: 'Accordion',
     titleSlot: 'Custom title',
     text: 'Content',
+  },
+  sunPage:{
+    title2: 'Simple Mode',
+    title3: 'Show ellipses',
+    prevText: 'Prev',
+    nextText: 'Next',
   }
 }
