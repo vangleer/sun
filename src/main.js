@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 // 引入sun-ui
 import Sun from 'vue-sun-ui'
+import Tab from './components/Tab.vue'
 import {Toast,Message} from 'vue-sun-ui'
 // 引入sun-ui样式文件
 import 'vue-sun-ui/dist/vue-sun-ui.css'
@@ -14,7 +15,7 @@ Vue.config.productionTip = false
 Vue.use(Sun)
 Vue.prototype.$toast = Toast
 Vue.prototype.$message = Message
-console.log(location.href,'啦啦啦')
+Vue.component('sun-tabs',Tab)
 const i18n = new VueI18n({
   locale: location.href.indexOf('en-US')===-1?'zh-CN':'en-US', // 定义默认语言为中文 
   messages: {
