@@ -3,8 +3,8 @@
     <sun-nav-bar />
     <div class="sun-demo-header">
       <h1>
-        <img src="../assets/logo-green.png" alt="阳光" />
-        <span>Sun</span>
+        <img src="../assets/logo.png" alt="sun-ui" />
+        <span>Sun-ui</span>
       </h1>
       <p class="sun-demo-home-desc">{{$t('common.sunDesc')}}</p>
     </div>
